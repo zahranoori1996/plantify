@@ -402,7 +402,7 @@ nav ul li a {
     outline: 0;
     color: var(--color-primary);
     padding: 15px 25px;
-    width: 100vw;
+    width: 84vw;
     border: 1px solid var(--color-primary);
 }
 
@@ -415,7 +415,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 10px;
     font-size: .8rem;
 }
 
@@ -463,16 +463,32 @@ nav ul li a {
     gap: 20px;
 
 }
+.image-plant{
+    width: 350px;
+   
+
+}
 
 .more {
     position: absolute;
     top: 50%;
-    right: -2rem;
+    right:1%;
     display: flex;
+    align-items: center;
     gap: 5px;
     color: var(--color-primary);
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 
 
+}
+.more img{
+    width: 20px;
 }
 
 /* banner */
@@ -498,7 +514,24 @@ footer img{
     body{
         /* background: lightblue; */
     }
+    .plant-stands{
+       
+
+    }
+    .container-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image-plant{
+        width: 250px;
+       
     
+    }
+    .more{
+        position: relative;
+       
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -506,7 +539,15 @@ footer img{
     body{
         /* background: palevioletred; */
     }
+    .image-plant{
+        width: 200px;
+       
     
+    }
+    .more{
+        right:3%;
+       
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -514,7 +555,15 @@ footer img{
     body{
         /* background: orange; */
     }
+    .image-plant{
+        width: 250px;
+       
     
+    }
+    .more{
+        right:3%;
+       
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -522,7 +571,15 @@ footer img{
     body{
         /* background: pink; */
     }
+    .image-plant{
+        width: 310px;
+       
     
+    }
+    .more{
+        right:5%;
+       
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -530,5 +587,14 @@ footer img{
     body{
         /* background: rebeccapurple; */
     }
+    .image-plant{
+        width: 350px;
+       
+    
+    }
+    .more{
+        right:1%;
+       
+}
     
 } 
