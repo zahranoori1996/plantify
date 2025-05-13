@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --color-primary: #004F44;
+    --color-secondery: #F3FFFC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+   
+}
+body{
+     overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+
+}
+/* --------------------nav------------------------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.top-site {
+    height: 800px;
+    background: var(--color-primary);
+}
+
+header {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+  /*  style orginal menu */
+  .dropdown-menu > ul {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  .dropdown-menu > ul > li {
+    position: relative;
+  }
+  
+  .dropdown-menu > ul > li > a {
+    display: block;
+    transition: all 0.3s ease;
+  }
+  /* Cascade menu style */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -7px;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+   
+}
+  .dropdown{
+    transition: hover .3s ease-in ;
+    -webkit-transition: hover .3s ease-in ;
+    -moz-transition: hover .3s ease-in ;
+    -ms-transition: hover .3s ease-in ;
+    -o-transition: hover .3s ease-in ;
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  
+  }
+  .dropdown-content li{
+    padding: 7px ;
+  }
+
+
+.logo {
+    width: 280px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* -----------------------hero section-------------------- */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-section_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.heading-text {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.description-text {
+    color: #fff;
+    width: 70%;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    width: 150px;
+    height: 50px;
+    font-size: .9rem;
+
+
+}
+
+.btn-shop-now {
+    color: var(--color-primary);
+    outline: 0;
+    border: 0;
+}
+
+.btn-explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--color-primary);
+    gap: 9px;
+    border: 0;
+}
+/* ------------------------------section images------------------------ */
+.hero-section_products {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    padding: 2rem 0;
+    height: fit-content;
+    position: relative;
+}
+
+.hero-section_products img {
+    width: 100%;
+    height: 99%;
+}
+.product-suggestion{
+    
+}
+.pattern{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom:10px;
+    left: -40px;
+    background-image: url(./assets/images/pattern.png);
+}
+.featured-product{
+    overflow: hidden;
+}
+.new-product .popular-product .featured-product {}
+
+.position {
+    position: relative;
+
+}
+
+.position h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 5px 13px;
+    font-weight: normal;
+    font-size: .7rem;
+
+}
+
+.description {
+    position: absolute;
+    bottom: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(107, 107, 107, 0.62) 50%, rgba(0, 0, 0, 0.88) 100%);
+}
+
+.description h4 {
+    font-size: 1.5rem;
+
+}
+
+.description p {
+    font-size: 1rem;
+
+}
+
+.description a {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    color: var(--color-primary);
+
+}
+
+/* -------------------------section featured ------------------*/
+
+.featured {
+    padding: 4rem 0;
+}
+
+.featured-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10px;
+    font-size: .8rem;
+
+}
+
+.featured-title h2 {
+    font-size: 1.5rem;
+}
+
+.featured-title a,
+.featured-title h2 {
+    font-weight: normal;
+    color: var(--color-primary);
+
+
+}
+
+.container-cards {
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    gap: 15px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-tilte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.card-tilte h2,
+.card-tilte p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details button {
+    width: 60px;
+    height: 30px;
+    background: #fff;
+    color: var(--color-primary);
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.card-details button:hover {
+
+    background: var(--color-primary);
+    color: #fff;
+    outline: 0;
+    border: 0;
+}
+
+.plate-colors h3{
+    color: gray;
+    font-weight: normal;
+
+}
+
+.colors {
+    display: flex;
+    gap: 5px;
+    padding-top: 7px;
+
+}
+
+.color {
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.black {
+    background: #000;
+
+}
+
+.pink {
+    background: pink;
+}
+
+.gray {
+    background: gray;
+}
+
+.brown {
+    background: brown;
+}
+
+/* search  */
+.search-section {
+    background: var(--color-secondery);
+    height: 200px;
+    display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-icon,
+.search-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-icon {
+    background: var(--color-primary);
+
+}
+
+.search-icon img {
+    padding: 5px;
+}
+
+.search input {
+    outline: 0;
+    color: var(--color-primary);
+    padding: 15px 25px;
+    width: 100vw;
+    border: 1px solid var(--color-primary);
+}
+
+/*  */
+.colorful-flowers {
+    padding: 4rem 0;
+}
+
+.colorful-flowers-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: .8rem;
+}
+
+.colorful-flowers-title h2 {
+    font-size: 1.5rem;
+}
+
+.colorful-flowers-title a,
+.colorful-flowers-title h2 {
+    font-weight: normal;
+    color: var(--color-primary);
+
+
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Plant stands  */
+.plant-stands {
+    background-color: var(--color-secondery);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 2rem 0;
+    ;
+}
+
+.plant-stands h2 {
+    font-weight: normal;
+    color: var(--color-primary);
+    padding: 3rem 0;
+}
+
+.plant-stands_style {
+    width: 100%;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+}
+
+.more {
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    display: flex;
+    gap: 5px;
+    color: var(--color-primary);
+
+
+}
+
+/* banner */
+.banner{
+    padding: 3rem 0;
+}
+.banner img {
+    width: 100%;
+}
+
+/* footer */
+
+footer img{
+    width: 100%;
+    padding: 3rem 0;
+}
+
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        /* background: lightblue; */
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        /* background: palevioletred; */
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        /* background: orange; */
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        /* background: pink; */
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        /* background: rebeccapurple; */
+    }
+    
+} 
